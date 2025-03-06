@@ -15,7 +15,7 @@ RUN git clone https://github.com/MarHai/hy_2025_docker_test
 WORKDIR /hy_2025_docker_test
 
 # run the actual R script
-CMD R -e "source('analysis.r')"
+CMD R -e "source('analysis.r', echo = TRUE)"
 ```
 
 3. Open up a terminal or command line, change to the directory in which your `Dockerfile` is located, and run the following command:
