@@ -9,15 +9,19 @@ firstnames_male <-
   read_csv2(col_types = 'cn')
 
 firstnames_female %>% 
-  slice_max(order_by = Lukumäärä)
+  slice_max(order_by = Lukumäärä) %>%
+  print()
 
 firstnames_female %>% 
   summarise(M = mean(Lukumäärä),
-            SD = sd(Lukumäärä))
+            SD = sd(Lukumäärä)) %>%
+  print()
 
 firstnames_male %>% 
-  slice_max(order_by = Lukumäärä)
+  slice_max(order_by = Lukumäärä) %>%
+  print()
 
 firstnames_male %>% 
   summarise(M = mean(Lukumäärä),
-            SD = sd(Lukumäärä))
+            SD = sd(Lukumäärä)) %>%
+  print()
